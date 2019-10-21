@@ -1,0 +1,55 @@
+$default-primary-color: rgba(238,156,242,1);
+$second-primary-color: rgba(61,178,184,1);
+$font-color: darken($second-primary-color, 35%);
+$output-color: darken(rgba(61,178,184,0.5), 40%);
+$lines-color: white;
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Gudea", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(81,193,203);
+    background: radial-gradient(circle, $second-primary-color 0%, $default-primary-color 100%);
+}
+
+.calc-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+    button {
+        cursor: pointer;
+        font-size: 2rem;
+        color: $font-color;
+        border: 1px solid $lines-color;
+        outline: none;
+        background-color: $default-primary-color;
+        opacity: 0.95;
+
+        &:hover {
+            background-color: lighten($default-primary-color, 6%);
+        }
+    }
+
+    .bigger-btn {
+        grid-column: span 2;
+    }
+
+    .output {
+        grid-column: span 4;
+        background-color: $output-color;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
