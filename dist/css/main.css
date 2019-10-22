@@ -27,11 +27,18 @@ body {
       background-color: #f3b7f6; }
   .calc-container .bigger-btn {
     grid-column: span 2; }
+    .calc-container .bigger-btn.equal {
+      background-color: #f2f19c; }
   .calc-container .output {
     grid-column: span 4;
     background-color: rgba(10, 30, 31, 0.5);
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 10px; }
+    padding: 0.7rem;
+    word-wrap: break-word;
+    word-break: break-all; }
+    .calc-container .output .previous-num {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.5rem; }
