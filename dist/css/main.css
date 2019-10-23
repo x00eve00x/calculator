@@ -24,11 +24,13 @@ body {
     background-color: #ee9cf2;
     opacity: 0.95; }
     .calc-container button:hover {
-      background-color: #f3b7f6; }
+      background-color: #f4c0f7; }
   .calc-container .bigger-btn {
     grid-column: span 2; }
     .calc-container .bigger-btn.equal {
       background-color: #f2f19c; }
+      .calc-container .bigger-btn.equal:hover {
+        background-color: #edec78; }
   .calc-container .output {
     grid-column: span 4;
     background-color: rgba(10, 30, 31, 0.5);
@@ -42,3 +44,6 @@ body {
     .calc-container .output .previous-num {
       color: rgba(255, 255, 255, 0.7);
       font-size: 1.5rem; }
+    .calc-container .output .current-num {
+      color: white;
+      font-size: 2.5rem; }
