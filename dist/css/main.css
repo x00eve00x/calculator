@@ -12,12 +12,12 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px); }
   .calc-container button {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #113032;
     border: 1px solid white;
     outline: none;
@@ -41,9 +41,9 @@ body {
     padding: 0.7rem;
     word-wrap: break-word;
     word-break: break-all; }
-    .calc-container .output .previous-num {
+    .calc-container .output .previous-value {
       color: rgba(255, 255, 255, 0.7);
       font-size: 1.5rem; }
-    .calc-container .output .current-num {
+    .calc-container .output .current-value {
       color: white;
       font-size: 2.5rem; }

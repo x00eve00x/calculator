@@ -2,9 +2,9 @@ $default-primary-color: rgba(238,156,242,1);
 $second-primary-color: rgba(61,178,184,1);
 $complementary-color: rgba(242, 241, 156, 1);
 $font-color-btn: darken($second-primary-color, 35%);
-$previous-num: rgba(255, 255, 255, 0.7);
+$previous-value: rgba(255, 255, 255, 0.7);
 $white: rgba(255, 255, 255, 1);
-$output-color: darken(rgba(61,178,184,0.5), 40%);
+$display-color: darken(rgba(61,178,184,0.5), 40%);
 
 
 
@@ -24,13 +24,14 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 
     button {
+
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: $font-color-btn;
         border: 1px solid $white;
         outline: none;
@@ -56,7 +57,7 @@ body {
 
     .output {
         grid-column: span 4;
-        background-color: $output-color;
+        background-color: $display-color;
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
@@ -65,12 +66,12 @@ body {
         word-wrap: break-word;
         word-break: break-all;
 
-        .previous-num {
-            color: $previous-num;
+        .previous-value {
+            color: $previous-value;
             font-size: 1.5rem;
         }
 
-        .current-num {
+        .current-value {
             color: $white;
             font-size: 2.5rem;
         }
