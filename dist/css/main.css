@@ -3,7 +3,7 @@
   font-family: "Gudea", sans-serif; }
 
 body {
-  padding: 0;
+  padding: 5vh;
   margin: 0;
   background: #51c1cb;
   background: radial-gradient(circle, #3db2b8 0%, #ee9cf2 100%); }
@@ -13,8 +13,8 @@ body {
   justify-content: center;
   align-content: center;
   min-height: 90vh;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 100px); }
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: minmax(90px, auto) repeat(5, 90px); }
   .calc-container button {
     cursor: pointer;
     font-size: 2.5rem;
@@ -38,7 +38,7 @@ body {
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding: 0.7rem;
+    padding: 0.5rem;
     word-wrap: break-word;
     word-break: break-all; }
     .calc-container .output .previous-value {
@@ -46,4 +46,4 @@ body {
       font-size: 1.5rem; }
     .calc-container .output .current-value {
       color: white;
-      font-size: 2.5rem; }
+      font-size: 2.2rem; }

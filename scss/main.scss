@@ -14,8 +14,8 @@ $display-color: darken(rgba(61,178,184,0.5), 40%);
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    padding: 5vh;
+    margin:0;
     background: rgb(81,193,203);
     background: radial-gradient(circle, $second-primary-color 0%, $default-primary-color 100%);
 }
@@ -25,11 +25,10 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 90vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 90px);
 
     button {
-
         cursor: pointer;
         font-size: 2.5rem;
         color: $font-color-btn;
@@ -62,7 +61,7 @@ body {
         align-items: flex-end;
         justify-content: space-around;
         flex-direction: column;
-        padding: 0.7rem;
+        padding: 0.5rem;
         word-wrap: break-word;
         word-break: break-all;
 
@@ -73,7 +72,7 @@ body {
 
         .current-value {
             color: $white;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }
     }
 }
